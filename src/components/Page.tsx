@@ -1,11 +1,22 @@
-import { IonContent, IonHeader, IonPage, IonSearchbar, IonTitle, IonToolbar } from "@ionic/react";
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonSearchbar,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
 
 export interface PageProps {
-  title: string, 
-  toolbar?: any
+  title: string;
+  toolbar?: any;
 }
 
-const Page: React.FC<PageProps & {children: any}> = ({title, children, toolbar}) => {
+const Page: React.FC<PageProps & { children: any }> = ({
+  title,
+  children,
+  toolbar,
+}) => {
   return (
     <IonPage>
       <IonHeader>

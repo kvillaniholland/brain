@@ -1,4 +1,4 @@
-import { IModel, Model, PropertyType } from "../orm/Model"
+import { IModel, Model, PropertyType } from '../orm/Model'
 
 export interface ILocation extends IModel {
     name: string

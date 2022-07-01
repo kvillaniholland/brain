@@ -1,5 +1,5 @@
-import { IModel, Model, PropertyType } from "../orm/Model";
-import { IStrand } from "./Strand";
+import { IModel, Model, PropertyType } from '../orm/Model';
+import { IStrand } from '../models/Strand';
 
 export interface IStudent extends IModel {
     first_name: string;

@@ -1,4 +1,4 @@
-import { IModel, Model, PropertyType, Relationship } from "../orm/Model";
+import { IModel, Model, PropertyType, Relationship } from '../orm/Model';
 
 export interface IStaff extends IModel { first_name: string }
 

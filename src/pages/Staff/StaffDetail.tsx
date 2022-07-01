@@ -1,10 +1,12 @@
 import { ModelDetail } from "../../components/ModelDetail";
-import Staff from "../../providers/Staff";
+import Staff from "../../models/Staff";
 
-const StaffDetail: React.FC<{ match: { params: { staffId: number } } }> = (props) => {
-    const id = props.match.params.staffId;
+const StaffDetail: React.FC<{ match: { params: { staffId: number } } }> = (
+  props
+) => {
+  const id = props.match.params.staffId;
 
-   return <ModelDetail provider={Staff} id={id} editURL={`/staff/${id}/edit`} />
+  return <ModelDetail provider={Staff} id={id} editURL={`/staff/${id}/edit`} />;
 };
 
 export default StaffDetail;
